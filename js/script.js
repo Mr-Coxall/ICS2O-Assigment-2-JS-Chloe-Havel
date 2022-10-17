@@ -8,9 +8,18 @@
  * This function displays "Hello, World!".
  * @constructor
  */
-function doMathClicked() {
-  document.getElementById("multiply-math").innerHTML =
-    "<p>The Area Is =  " + 5 * 3 + "</p>"
-  document.getElementById("add-math").innerHTML =
-    "<p>The Perimeter Is = " + 2 * (5 + 3) + "</p>"
+'use strict'
+/**
+ * This function calculates area and perimeter of rectangle.
+ */
+function calculate () {
+  // input
+  const height = parseInt(document.getElementById('height-of-triangle').value)
+  const base = parseInt(document.getElementById('base-of-triangle').value)
+
+  // process
+  const area = (1/2) * base * height 
+
+  // output
+  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
 }
