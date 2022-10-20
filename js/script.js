@@ -14,12 +14,12 @@
  */
 function calculate() {
   // input
-  const height = parseInt(document.getElementById("height-of-triangle").value)
-  const base = parseInt(document.getElementById("base-of-triangle").value)
-
+  const Side1 = parseInt(document.getElementById("side-1-of-triangle").value)
+  const Side2 = parseInt(document.getElementById("side-2-of-triangle").value)
+  const Side3 = parseInt(document.getElementById("side-3-of-triangle").value)
   // process
-  const area = (1 / 2) * base * height
+  const triangle = Side1 + Side2 + Side3
 
   // output
-  document.getElementById("area").innerHTML = "Area is: " + area + " cm²"
+  document.getElementById("area").innerHTML = "perimeter is: " + triangle + " cm "
 }
