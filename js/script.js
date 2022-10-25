@@ -21,5 +21,6 @@ function calculate() {
   const triangle = Side1 + Side2 + Side3
 
   // output
-  document.getElementById("area").innerHTML = "perimeter is: " + triangle + " cm "
+  document.getElementById("area").innerHTML =
+    "perimeter is: " + triangle + " cm "
 }
